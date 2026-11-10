@@ -51,7 +51,7 @@ nav a:hover, .site-footer a:hover { text-decoration: underline; text-underline-o
   width: 84%;
   max-width: none;
   object-fit: cover;
-  object-position: 57% center;
+  object-position: 57% 68%;
 }
 .hero::before {
   content: "";
@@ -78,7 +78,6 @@ h2 { font-size: clamp(2.55rem, 5.5vw, 5.35rem); line-height: 1; text-wrap: balan
 .button-light:hover { background: #fff2da; transform: translateY(-2px); }
 .button span { flex: none; font-size: 1.2em; }
 .hero-caption { position: absolute; bottom: 1.2rem; left: 0; right: 0; text-align: right; color: var(--white); font-size: .76rem; text-shadow: 0 1px 4px #1b1611; }
-.hero-caption span { margin-right: .45rem; }
 
 .intro-note { display: grid; grid-template-columns: minmax(10rem, .65fr) minmax(0, 1.35fr); align-items: start; gap: 1.5rem; padding-block: clamp(2.7rem, 6vw, 5.6rem); }
 .section-label { display: flex; gap: .75rem; align-items: center; color: var(--green); }
@@ -89,7 +88,7 @@ h2 { font-size: clamp(2.55rem, 5.5vw, 5.35rem); line-height: 1; text-wrap: balan
 .services { background: var(--sand); padding-block: var(--section); }
 .services-layout { margin-top: 1.5rem; display: grid; grid-template-columns: minmax(0, .93fr) minmax(0, 1.07fr); align-items: start; gap: clamp(2rem, 6vw, 6rem); }
 .material { margin-top: 2rem; max-width: 27rem; }
-.material img { width: 100%; height: auto; aspect-ratio: 2.7; object-fit: cover; object-position: center 55%; }
+.material img { width: 100%; height: auto; aspect-ratio: 1.65; object-fit: cover; object-position: center 53%; }
 .material figcaption { color: var(--muted); font-size: .85rem; margin-top: .45rem; }
 .service-list { margin: .2rem 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .service-list li { display: grid; grid-template-columns: 2.15rem minmax(0, 1fr); gap: 1rem; border-bottom: 1px solid var(--line); padding-block: 1.4rem; }
@@ -105,6 +104,8 @@ h3 { font: 400 clamp(1.35rem, 2.4vw, 1.8rem)/1.17 var(--display); letter-spacing
 .product-image { position: relative; display: block; overflow: clip; background: #ede8de; }
 .product-image img { width: 100%; height: auto; aspect-ratio: 1.05; object-fit: cover; transition: transform .45s ease; }
 .product-studio img { object-fit: contain; mix-blend-mode: multiply; padding: .5rem; }
+.product-wide { grid-column: span 2; }
+.product-wide img { aspect-ratio: 1.65; object-position: center 59%; }
 .view-icon {
   position: absolute;
   display: grid;
@@ -146,7 +147,7 @@ h3 { font: 400 clamp(1.35rem, 2.4vw, 1.8rem)/1.17 var(--display); letter-spacing
   .header-inner { flex-direction: column; align-items: flex-start; justify-content: center; gap: 0; padding-block: .45rem .15rem; }
   nav { gap: .15rem clamp(.4rem, 3vw, 1.6rem); }
   nav a { font-size: .82rem; }
-  .hero-image { width: 100%; object-position: 55% center; }
+  .hero-image { width: 100%; object-position: 55% 68%; }
   .hero::before { background: linear-gradient(90deg, #211b16eb, #211b169e 70%, #211b1666), linear-gradient(0deg, #211b1673, transparent 30%); }
   .hero-inner { min-height: clamp(27rem, 72svh, 37rem); padding-block: 3rem 4rem; }
   .intro-note, .services-layout, .contact-layout { grid-template-columns: minmax(0, 1fr); }
