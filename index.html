@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#f5f0e7">
   <title>Impressive Wood | Perabot dan Kerja Kayu di Melaka</title>
   <link rel="icon" href="assets/logo-daun.webp" type="image/webp">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=latar">
+  <script src="script.js?v=latar" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#pengenalan">Langkau ke kandungan</a>
@@ -30,7 +30,9 @@
   <main>
     <section id="pengenalan" class="intro" aria-labelledby="tajuk-utama">
       <div class="hero">
-        <img class="hero-image" src="assets/bilik-pameran.webp" alt="Bilik pameran Impressive Wood dengan katil dan kemasan dinding kayu" fetchpriority="high">
+        <img class="hero-image hero-showroom is-active" src="assets/bilik-pameran.webp" alt="" fetchpriority="high">
+        <img class="hero-image hero-products" src="assets/pameran-produk-kayu.webp" alt="" fetchpriority="low">
+        <img class="hero-image hero-production" src="assets/pengeluaran-kayu.webp" alt="" fetchpriority="low">
         <div class="wrap hero-inner">
           <div class="hero-copy">
             <p class="eyebrow hero-label">Impressive Wood <span aria-hidden="true">/</span> Melaka</p>
@@ -39,7 +41,15 @@
             <a class="button button-light" href="#galeri">Lihat galeri produk <span aria-hidden="true">↓</span></a>
           </div>
         </div>
-        <div class="wrap hero-caption">Bilik pameran Impressive Wood</div>
+        <div class="wrap hero-footer">
+          <div class="hero-controls" role="group" aria-label="Pilihan foto latar" hidden>
+            <button class="hero-slide" type="button" aria-label="Papar bilik pameran" aria-pressed="true" data-caption="Bilik pameran Impressive Wood">1</button>
+            <button class="hero-slide" type="button" aria-label="Papar produk kayu" aria-pressed="false" data-caption="Produk kayu dalam pameran">2</button>
+            <button class="hero-slide" type="button" aria-label="Papar proses pengeluaran" aria-pressed="false" data-caption="Kerja kemasan kayu di bengkel">3</button>
+            <button class="hero-toggle" type="button">Jeda tayangan</button>
+          </div>
+          <p class="hero-caption">Bilik pameran Impressive Wood</p>
+        </div>
       </div>
       <div class="wrap intro-note" data-reveal>
         <p class="eyebrow section-label"><span aria-hidden="true">01</span> Pengenalan</p>
